@@ -1,0 +1,25 @@
+{
+	"name": "ds_onprem_csv_file_source",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_onprem_file_source",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "onprem_to_cloud"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": "annual-enterprise-survey-2021-financial-year-provisional-csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
